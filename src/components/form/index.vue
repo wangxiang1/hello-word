@@ -37,7 +37,11 @@ export default {
     login(){
       this.$refs["loginForm"].validate((valid) => {
         if (valid) {
-          alert("submit");
+          this.$notice({
+            title: '提示信息',
+            message: '登录成功！'
+          }).show();
+
         } else {
           console.log("error submit!");
           return false;

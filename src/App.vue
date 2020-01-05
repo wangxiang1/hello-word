@@ -15,7 +15,10 @@
 <script>
 
 export default {
-  name: 'app'
+  name: 'app',
+  // mounted(){
+  //   console.log(this.$parent, this)
+  // }
 }
 </script>
 
