@@ -1,10 +1,17 @@
 <template>
-  <div>About Compontent</div>
+  <div>
+    <h2>wangxiang的表单</h2>
+    <FormElement />
+  </div>
 </template>
 
 <script>
-export default {
+import FormElement from '../components/form';
 
+export default {
+  components: {
+    FormElement
+  }
 }
 </script>
 
