@@ -1,0 +1,13 @@
+<template>
+  <div>About Compontent</div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>
