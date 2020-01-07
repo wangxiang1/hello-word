@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>|
-      <router-link to="/communication">communication</router-link>
+      <mrouter-link to="/">Home</mrouter-link>|
+      <mrouter-link to="/about">About</mrouter-link>|
+      <mrouter-link to="/communication">communication</mrouter-link>
     </div>
 
     <img alt="Vue logo" src="./assets/logo.png">
     <!-- 路由出口 -->
-    <router-view/>
+    <mrouter-view/>
   </div>
 </template>
 
