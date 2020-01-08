@@ -1,12 +1,12 @@
 /*
  * @Author: wangxiang 
  * @Date: 2020-01-05 22:45:32 
- * @Last Modified by:   wangxiang 
- * @Last Modified time: 2020-01-05 22:45:32 
+ * @Last Modified by: wangxiang
+ * @Last Modified time: 2020-01-07 15:36:39
  */
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Home from '@/views/Home'
 import Communication from '@/components/communication'
 import About from '@/views/About'
 
@@ -17,8 +17,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Home',
+      component: Home
     },
     {
       path: '/about',
