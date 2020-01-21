@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>手写vue源码测试html</title>
+</head>
+<body>
+  <div id="app">
+      <p>{{message}}</p>
+      <p>{{count}}</p>
+      <div m-text="message"></div>
+      <div m-html="desc"></div>
+  </div>
+  <script src="./mvue/compiler.js"></script>
+  <script src="./mvue/mvue.js"></script>
+  <script>
+    const vm = new MVue({
+      el: '#app',
+      data: {
+        count: 0,
+        message: "我的vue",
+        desc: "<span style='color: red'>wangxiang</span>"
+      }
+    })
+
+    setInterval(() => {
+      vm.count++
+    }, 1000)
+    // console.log(vm.message);
+  </script>
+</body>
+</html>
