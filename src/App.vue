@@ -1,22 +1,23 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <mrouter-link to="/">Home</mrouter-link>|
-      <mrouter-link to="/about">About</mrouter-link>|
-      <mrouter-link to="/communication">communication</mrouter-link>
-    </div>
-
     <img alt="Vue logo" src="./assets/logo.png">
-    <!-- 路由出口 -->
-    <mrouter-view/>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
+    <HelloTypeScript />
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import HelloWorld from './components/HelloWorld.vue';
+import HelloTypeScript from './components/HelloTypeScript.vue';
 
-export default {
-  name: 'app',
-}
+@Component({
+  components: {
+    HelloWorld,
+    HelloTypeScript
+  },
+})
+export default class App extends Vue {}
 </script>
 
 <style>
